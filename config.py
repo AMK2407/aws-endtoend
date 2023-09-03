@@ -1,0 +1,6 @@
+customhost = "student.coghw13fheqo.us-east-2.rds.amazonaws.com"
+customuser = "nepaltechtube"
+custompass = "password"
+customdb = "student"
+custombucket = "addstudents"
+customregion = "us-east-2"
