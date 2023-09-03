@@ -28,7 +28,7 @@ def home():
 
 @app.route("/about", methods=['POST'])
 def about():
-    return render_template('www.sekharkhanal.com.np')
+    return render_template('www.facebook.com')
 
 
 @app.route("/addstu", methods=['POST'])
@@ -40,7 +40,7 @@ def AddStu():
     location = request.form['location']
     stu_image_file = request.files['stu_image_file']
 
-    insert_sql = "INSERT INTO employee VALUES (%s, %s, %s, %s, %s)"
+    insert_sql = "INSERT INTO student VALUES (%s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
 
     if stu_image_file.filename == "":
