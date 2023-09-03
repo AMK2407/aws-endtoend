@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<center>
-	<font color="DodgerBlue" size="5" style="font-family: avenir">
-		<body bgcolor="lightgrey">
-			<h1>SAVE SUCCESSFUL</h1><br>
-			<h2>Following Student has been added to the database</h2><br>
-			<h2>{{ name }}</h2><br>
-			<title>Add Student Output</title>
-				<form action="http://3.134.115.108:80/" autocomplete="on" method = "GET">
+    <meta charset="UTF-8">
+    <title>Add Student Output</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Avenir', sans-serif;
+            text-align: center;
+        }
 
-					<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+        h1 {
+            color: #3498db;
+            font-size: 36px;
+        }
 
-				</form>
-		</body>
-	</font>
-</center>
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        button[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
+    <h1>SAVE SUCCESSFUL</h1>
+    <h2>Following Student has been added to the database</h2>
+    <h2>{{ name }}</h2>
 
+    <form action="/" autocomplete="on" method="GET">
+        <button type="submit">GO BACK</button>
+    </form>
 </body>
 </html>
